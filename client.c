@@ -1,0 +1,7 @@
+// DDRD - Data Direction Register for PORTD
+// Adress: 0x2A (bin: 00101010)
+#define DDRD_REG (*(volatile uint8_t*)0x2A)
+
+// PORTD - Data Register for PORTD
+// Adress: 0x2B (bin: 00101011)
+#define PORTD_REG (*(volatile uint8_t*)0x2B)
