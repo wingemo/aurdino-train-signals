@@ -11,4 +11,7 @@ void initialize() {
     // Set pin 2 (bit 2) as output
     // By OR-ing 0b00000110 (bit 1 and bit 2) into DDRD
     DDRD_REG |= (1 << 1) | (1 << 2);
+
+     // Set the output LOW at startup
+    PORTD_REG &= ~((1 << 1) | (1 << 2)); // Set pin 1 and 2 LOW
 }
